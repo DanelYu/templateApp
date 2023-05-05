@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+      "module": "ESNext",
+      "target": "ESNext",
+      "sourceMap": true,
+
+      // `"noImplicitThis": true` is part of `strict`
+      // Added again here in case some users decide to disable `strict`.
+      // This enables stricter inference for data properties on `this`.
+      "noImplicitThis": true,
+      "strict": true
+  }
+}

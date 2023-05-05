@@ -1,0 +1,5 @@
+packages:
+  # 包
+  - 'packages/*'
+  # 各端业务
+  - 'clients/*'
