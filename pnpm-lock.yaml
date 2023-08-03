@@ -1,10 +1,18 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .: {}
 
-  packages/vue-web:
+  clients/logic: {}
+
+  clients/weapp: {}
+
+  clients/web-vue:
     dependencies:
       pinia:
         specifier: ^2.0.32
@@ -21,10 +29,10 @@ importers:
         version: 18.14.2
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
-        version: 4.0.0(vite@4.1.4)(vue@3.2.47)
+        version: 4.0.0(vite@4.1.5)(vue@3.2.47)
       '@vitejs/plugin-vue-jsx':
         specifier: ^3.0.0
-        version: 3.0.0(vite@4.1.4)(vue@3.2.47)
+        version: 3.0.0(vite@4.1.5)(vue@3.2.47)
       '@vue/tsconfig':
         specifier: ^0.1.3
         version: 0.1.3(@types/node@18.14.2)
@@ -35,11 +43,17 @@ importers:
         specifier: ~4.8.4
         version: 4.8.4
       vite:
-        specifier: ^4.1.4
-        version: 4.1.4(@types/node@18.14.2)
+        specifier: ^4.1.5
+        version: 4.1.5(@types/node@18.14.2)
       vue-tsc:
         specifier: ^1.2.0
         version: 1.2.0(typescript@4.8.4)
+
+  packages/api: {}
+
+  packages/hooks: {}
+
+  packages/http-adapter: {}
 
 packages:
 
@@ -580,7 +594,7 @@ packages:
     resolution: {integrity: sha512-1uEQxww3DaghA0RxqHx0O0ppVlo43pJhepY51OxuQIKHpjbnYLA7vcdwioNPzIqmC2u3I/dmylcqjlh0e7AyUA==}
     dev: true
 
-  /@vitejs/plugin-vue-jsx@3.0.0(vite@4.1.4)(vue@3.2.47):
+  /@vitejs/plugin-vue-jsx@3.0.0(vite@4.1.5)(vue@3.2.47):
     resolution: {integrity: sha512-vurkuzgac5SYuxd2HUZqAFAWGTF10diKBwJNbCvnWijNZfXd+7jMtqjPFbGt7idOJUn584fP1Ar9j/GN2jQ3Ew==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -590,20 +604,20 @@ packages:
       '@babel/core': 7.21.8
       '@babel/plugin-transform-typescript': 7.21.3(@babel/core@7.21.8)
       '@vue/babel-plugin-jsx': 1.1.1(@babel/core@7.21.8)
-      vite: 4.1.4(@types/node@18.14.2)
+      vite: 4.1.5(@types/node@18.14.2)
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue@4.0.0(vite@4.1.4)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.0.0(vite@4.1.5)(vue@3.2.47):
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.4(@types/node@18.14.2)
+      vite: 4.1.5(@types/node@18.14.2)
       vue: 3.2.47
     dev: true
 
@@ -641,6 +655,7 @@ packages:
 
   /@volar/vue-typescript@1.2.0:
     resolution: {integrity: sha512-zjmRi9y3J1EkG+pfuHp8IbHmibihrKK485cfzsHjiuvJMGrpkWvlO5WVEk8oslMxxeGC5XwBFE9AOlvh378EPA==}
+    deprecated: 'WARNING: This project has been renamed to @vue/typescript. Install using @vue/typescript instead.'
     dependencies:
       '@volar/typescript': 1.3.0-alpha.0
       '@volar/vue-language-core': 1.2.0
@@ -1634,8 +1649,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.1.4(@types/node@18.14.2):
-    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
+  /vite@4.1.5(@types/node@18.14.2):
+    resolution: {integrity: sha512-zJ0RiVkf61kpd7O+VtU6r766xgnTaIknP/lR6sJTZq3HtVJ3HGnTo5DaJhTUtYoTyS/CQwZ6yEVdc/lrmQT7dQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
